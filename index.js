@@ -2,7 +2,8 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 
-//middleware
+//MIDDLEWARES
+app.use(express.static('build')) //this has to be declared when deploying the server to internet. so that requests goes to 'build' dir first
 app.use(cors())
 app.use(express.json())
 

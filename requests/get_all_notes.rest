@@ -10,4 +10,16 @@ content-type: application/json
 }
 
 ###
+POST http://192.168.1.11:3002/api/notes
+content-type: application/json
+
+{
+    "content123": "sample content through vs code rest plugin",
+    "important1": true
+}
+
+###
 DELETE http://192.168.1.11:3002/api/notes/4
+
+###
+DELETE https://serene-brook-18625.herokuapp.com/api/notes/4
