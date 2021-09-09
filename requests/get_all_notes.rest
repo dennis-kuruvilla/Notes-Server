@@ -1,0 +1,13 @@
+GET http://192.168.1.11:3002/api/notes
+
+###
+POST http://192.168.1.11:3002/api/notes
+content-type: application/json
+
+{
+    "content": "sample content through vs code rest plugin",
+    "important": true
+}
+
+###
+DELETE http://192.168.1.11:3002/api/notes/4
